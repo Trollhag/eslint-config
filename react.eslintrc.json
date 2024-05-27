@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint", "import"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 11,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.{ts,tsx}"],
+      "extends": ["./typescript.js"]
+    },
+    {
+      "files": ["**/*.{js,mjs,cjs,jsx}"],
+      "extends": ["./javascript.js"]
+    }
+  ]
+}

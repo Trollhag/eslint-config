@@ -1,0 +1,13 @@
+name: release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+
+  publish-gpr:
+    needs: test
+    uses: ./.github/workflows/publish.yml

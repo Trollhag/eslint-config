@@ -1,0 +1,83 @@
+{
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "plugins": ["import"],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "no-console": "off",
+    "strict": ["error", "global"],
+    "no-unused-vars": "off",
+    "no-undef-init": "warn",
+    "no-bitwise": "warn",
+    "curly": "error",
+    "eqeqeq": "error",
+    "no-extend-native": "error",
+    "no-useless-escape": "error",
+    "semi": ["error", "never"],
+    "comma-dangle": ["warn", "always-multiline"],
+    "prefer-template": "warn",
+    "template-curly-spacing": ["warn", "never"],
+    "one-var": ["warn", "never"],
+    "no-var": "warn",
+    "prefer-const": ["warn", { "destructuring": "all" }],
+    "operator-linebreak": [
+      "warn",
+      "after",
+      { "overrides": { "?": "before", ":": "before" } }
+    ],
+    "quote-props": ["warn", "as-needed"],
+    "linebreak-style": ["error", "unix"],
+    "no-eval": "error",
+    "no-throw-literal": "error",
+    "require-atomic-updates": "off",
+
+    "indent": ["warn", 2],
+    "object-curly-spacing": [
+      "warn",
+      "always",
+      { "objectsInObjects": true, "arraysInObjects": true }
+    ],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "no-trailing-spaces": "warn",
+    "quotes": [
+      "warn",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
+    ],
+    "keyword-spacing": ["warn", { "before": true }],
+    "space-before-function-paren": [
+      "warn",
+      { "anonymous": "always", "named": "never", "asyncArrow": "always" }
+    ],
+    "space-in-parens": ["warn", "never"],
+    "spaced-comment": ["warn", "always"],
+    "space-unary-ops": ["warn", { "words": true, "nonwords": false }],
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "external",
+          "internal",
+          ["parent", "sibling", "index"],
+          "builtin",
+          "object"
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "newlines-between": "never",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "warnOnUnassignedImports": false
+      }
+    ],
+    "import/no-default-export": "warn",
+    "lines-between-class-members": [
+      "warn",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ]
+  }
+}

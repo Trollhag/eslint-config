@@ -1,0 +1,52 @@
+{
+  "name": "@trollhag/eslint-config",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "lint",
+    "linter",
+    "linting"
+  ],
+  "homepage": "https://github.com/trollhag/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/trollhag/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trollhag/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": "Oscar Trollhag <oscar@trollhag.com> (https://trollhag.com)",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "format": "eslint --fix .",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.0.9",
+    "@trollhag/prettier-config": "^0.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.28.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "jest": "^27.3.1",
+    "prettier": "3.2.5"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": ">=6.8.0",
+    "typescript": ">=4.3.2"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
