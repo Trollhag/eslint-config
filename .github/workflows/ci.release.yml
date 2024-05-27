@@ -8,6 +8,6 @@ jobs:
   test:
     uses: ./.github/workflows/test.yml
 
-  publish-gpr:
+  publish:
     needs: test
     uses: ./.github/workflows/publish.yml
