@@ -1,7 +1,7 @@
 # @trollhag/eslint-config
 
 [![test](https://github.com/trollhag/eslint-config/workflows/test/badge.svg)](https://github.com/trollhag/eslint-config/actions/workflows/test.yml)
-[![publish](https://github.com/trollhag/eslint-config/workflows/publish/badge.svg)](https://github.com/trollhag/eslint-config/actions/workflows/publish.yml)
+[![release](https://github.com/trollhag/eslint-config/workflows/release/badge.svg)](https://github.com/trollhag/eslint-config/actions/workflows/release.yml)
 [![license](https://img.shields.io/github/license/trollhag/eslint-config.svg)](https://github.com/trollhag/eslint-config/blob/main/LICENSE)
 
 ## Install
