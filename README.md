@@ -1,17 +1,10 @@
 # @trollhag/eslint-config
 
-[![release](https://github.com/trollhag/eslint-config/workflows/release/badge.svg)](https://github.com/trollhag/eslint-config/actions/workflows/release.yml)
+[![test](https://github.com/trollhag/eslint-config/workflows/test/badge.svg)](https://github.com/trollhag/eslint-config/actions/workflows/test.yml)
+[![publish](https://github.com/trollhag/eslint-config/workflows/publish/badge.svg)](https://github.com/trollhag/eslint-config/actions/workflows/publish.yml)
 [![license](https://img.shields.io/github/license/trollhag/eslint-config.svg)](https://github.com/trollhag/eslint-config/blob/main/LICENSE)
 
 ## Install
-
-Set registry scope in `.npmrc`
-
-```
-@trollhag:registry=https://npm.pkg.github.com
-```
-
-Install
 
 ```shell script
 npm install --save-dev eslint @trollhag/eslint-config
@@ -35,7 +28,7 @@ This package contains the following configurations:
 
 - default - TypeScript + JavaScript
 - `typestrict` - TypeScript strict, type checking (slower)
-- `react` - React
+- `react` - React / React + TypeScript
 - `javascript` - JavaScript
 
 ### Examples

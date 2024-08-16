@@ -2,6 +2,10 @@ name: test
 
 on:
   workflow_call:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   test:
@@ -16,8 +20,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
-          registry-url: https://npm.pkg.github.com/
-          scope: '@trollhag'
 
       - name: Determine dependencies
         run: |
@@ -32,8 +34,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install --ignore-scripts --no-audit
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Test
         run: npm run test
