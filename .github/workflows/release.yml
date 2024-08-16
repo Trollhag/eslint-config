@@ -11,3 +11,4 @@ jobs:
   publish:
     needs: test
     uses: ./.github/workflows/publish-npm.yml
+    secrets: inherit
